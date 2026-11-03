@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navy"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="32dp">
+
+        <!-- Language Selector -->
+        <LinearLayout
+            android:id="@+id/layoutLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/language_label"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_menu_compass"
+                app:tint="@color/gold"
+                android:contentDescription="@null" />
+        </LinearLayout>
+
+        <!-- Brand Header -->
+        <LinearLayout
+            android:id="@+id/layoutBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutLanguage">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/gold"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.05"
+                android:contentDescription="@string/accessibility_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/brand_subtitle"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:alpha="0.8"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- Sign Up Heading -->
+        <TextView
+            android:id="@+id/tvSignupTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_signup"
+            android:textColor="@color/gold"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutBrand" />
+
+        <!-- Form Inputs Container -->
+        <LinearLayout
+            android:id="@+id/layoutSignupForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSignupTitle">
+
+            <!-- Regional Location Input -->
+            <EditText
+                android:id="@+id/etSignupRegion"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_input"
+                android:hint="@string/hint_signup_region"
+                android:inputType="textPostalAddress|textCapWords"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/primary_text"
+                android:textColorHint="@color/secondary_text"
+                android:textSize="15sp"
+                android:layout_marginBottom="16dp"
+                android:autofillHints="addressRegion" />
+
+            <!-- Full Name Input -->
+            <EditText
+                android:id="@+id/etSignupName"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_input"
+                android:hint="@string/hint_signup_name"
+                android:inputType="textPersonName|textCapWords"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/primary_text"
+                android:textColorHint="@color/secondary_text"
+                android:textSize="15sp"
+                android:layout_marginBottom="16dp"
+                android:autofillHints="name" />
+
+            <!-- Phone Number Input -->
+            <EditText
+                android:id="@+id/etSignupPhone"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_input"
+                android:hint="@string/hint_signup_phone"
+                android:inputType="phone"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/primary_text"
+                android:textColorHint="@color/secondary_text"
+                android:textSize="15sp"
+                android:layout_marginBottom="28dp"
+                android:autofillHints="phone" />
+
+            <!-- Next Button -->
+            <Button
+                android:id="@+id/btnSignupNext"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/bg_gold_button"
+                android:text="@string/btn_next"
+                android:textColor="@color/navy"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:stateListAnimator="@null"
+                android:elevation="0dp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

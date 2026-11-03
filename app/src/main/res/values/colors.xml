@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="navy">#102A43</color>
+    <color name="navy_dark">#0B1D30</color>
+    <color name="gold">#F4C542</color>
+    <color name="gold_pressed">#D9AD34</color>
+    <color name="background">#F7F9FC</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="primary_text">#172B4D</color>
+    <color name="secondary_text">#64748B</color>
+    <color name="input_background">#FFFFFF</color>
+    <color name="input_stroke">#CBD5E1</color>
+    <color name="input_stroke_focused">#102A43</color>
+    <color name="error_color">#DC2626</color>
+    <color name="success_color">#15803D</color>
+    <color name="success_background">#DCFCE7</color>
+    <color name="placeholder_bg">#F1F5F9</color>
+    <color name="gray_light">#E2E8F0</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+</resources>

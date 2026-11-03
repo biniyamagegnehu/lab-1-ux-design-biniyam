@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">H-CASH</string>
+    <string name="brand_subtitle">A Learning Mobile Money Service Provider</string>
+
+    <!-- Screen 1: Login -->
+    <string name="title_login">Login</string>
+    <string name="hint_login_phone">Enter Your Phone Number</string>
+    <string name="hint_login_password">Password</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="prompt_new_user_prefix">I\'m a new user.</string>
+    <string name="prompt_new_user_action">Sign Up</string>
+    <string name="language_label">Language</string>
+
+    <!-- Screen 2: Sign Up -->
+    <string name="title_signup">Sign Up</string>
+    <string name="hint_signup_region">Enter Your Regional Location</string>
+    <string name="hint_signup_name">Enter Your Name</string>
+    <string name="hint_signup_phone">Phone Number</string>
+    <string name="btn_next">Next</string>
+
+    <!-- Screen 3: Personal Information -->
+    <string name="title_personal_info">Personal info</string>
+    <string name="label_upload_id">Upload ID</string>
+    <string name="label_photo_face">Photo of Face</string>
+    <string name="hint_enter_pin">Enter Your PIN</string>
+    <string name="hint_confirm_pin">Confirm Pin</string>
+    <string name="btn_proceed">Proceed</string>
+
+    <!-- Screen 4 & 6: Phone Verification -->
+    <string name="title_verify_phone">Verify Your Phone Number</string>
+    <string name="subtitle_verify_phone">We Have Sent an one time password on this Mobile 0976169253</string>
+    <string name="subtitle_additional_verification">We have sent a one time password on this Mobile Number - 0976169253</string>
+    <string name="label_passcode">Pass code</string>
+    <string name="hint_otp">------</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="verification_code_label">VERIFICATION CODE</string>
+
+    <!-- Screen 5: Congratulations / Success -->
+    <string name="title_congratulations">Congratulations</string>
+    <string name="subtitle_congratulations">Your Hcash account has successfully been created</string>
+    <string name="desc_congratulations">click the button below to verify your account and unlock unlimited services</string>
+
+    <!-- Screen 7: Home Dashboard -->
+    <string name="header_username">Kalkidán</string>
+    <string name="label_wallet_balance">Wallet Balance</string>
+    <string name="service_merchant">Merchant</string>
+    <string name="service_merchant_desc">pay merchant</string>
+    <string name="service_send">Send</string>
+    <string name="service_send_desc">Send money</string>
+    <string name="service_airtime">Airtime</string>
+    <string name="service_airtime_desc">Top up</string>
+    <string name="service_withdraw">Withdraw</string>
+    <string name="service_withdraw_desc">Withdraw</string>
+    <string name="banner_promo">FREE\nSend to shabelle\nBank for free</string>
+    <string name="section_services">Services</string>
+    <string name="service_flight">Flight</string>
+    <string name="service_flight_desc">pay your ticket</string>
+    <string name="service_bills">Bills</string>
+    <string name="service_bills_desc">pay your bills</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_transaction">transaction</string>
+    <string name="nav_my_activity">My Activity</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Screen 8: Transactions -->
+    <string name="title_transactions">Transactions</string>
+    <string name="subtitle_transactions">last 50 transactions</string>
+    <string name="filter_select_code">Select code</string>
+    <string name="filter_clear_date">Clear data</string>
+    <string name="filter_title">Filter Here</string>
+    <string name="filter_my_activity">My Activity</string>
+    <string name="filter_by_customer">Filter by Customer</string>
+    <string name="filter_mini_statement">Mini Statement</string>
+    <string name="filter_email_activity">Email my Activity</string>
+
+    <!-- Accessibility descriptions -->
+    <string name="accessibility_logo">H-CASH Logo</string>
+    <string name="accessibility_id_upload">Government ID upload card</string>
+    <string name="accessibility_face_upload">Face photo verification card</string>
+    <string name="accessibility_success_icon">Verification success checkmark icon</string>
+</resources>

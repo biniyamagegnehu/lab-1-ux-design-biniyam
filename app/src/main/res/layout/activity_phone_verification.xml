@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navy"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="32dp">
+
+        <!-- Language Selector -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/language_label"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_menu_compass"
+                app:tint="@color/gold"
+                android:contentDescription="@null" />
+        </LinearLayout>
+
+        <!-- Brand Header -->
+        <LinearLayout
+            android:id="@+id/layoutBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/gold"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.05"
+                android:contentDescription="@string/accessibility_logo" />
+        </LinearLayout>
+
+        <!-- Verification Title -->
+        <TextView
+            android:id="@+id/tvVerifyTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/title_verify_phone"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutBrand" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/tvVerifySubtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/subtitle_verify_phone"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:alpha="0.8"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvVerifyTitle" />
+
+        <!-- Pass code Label -->
+        <TextView
+            android:id="@+id/tvPasscodeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_passcode"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvVerifySubtitle" />
+
+        <!-- 6 Individual OTP Digit Boxes Container -->
+        <LinearLayout
+            android:id="@+id/layoutOtpDigits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPasscodeLabel">
+
+            <EditText
+                android:layout_width="45dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_otp_digit"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:autofillHints="smsOTPCode" />
+
+            <EditText
+                android:layout_width="45dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_otp_digit"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:autofillHints="smsOTPCode" />
+
+            <EditText
+                android:layout_width="45dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_otp_digit"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:autofillHints="smsOTPCode" />
+
+            <EditText
+                android:layout_width="45dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_otp_digit"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:autofillHints="smsOTPCode" />
+
+            <EditText
+                android:layout_width="45dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_otp_digit"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:autofillHints="smsOTPCode" />
+
+            <EditText
+                android:layout_width="45dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_otp_digit"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:autofillHints="smsOTPCode" />
+        </LinearLayout>
+
+        <!-- Action Buttons Container -->
+        <LinearLayout
+            android:id="@+id/layoutVerifyButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutOtpDigits">
+
+            <Button
+                android:id="@+id/btnVerifyProceed"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/bg_gold_button"
+                android:text="@string/btn_proceed"
+                android:textColor="@color/navy"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:stateListAnimator="@null"
+                android:elevation="0dp"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnVerifyCancel"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/bg_outlined_button"
+                android:text="@string/btn_cancel"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:stateListAnimator="@null"
+                android:elevation="0dp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

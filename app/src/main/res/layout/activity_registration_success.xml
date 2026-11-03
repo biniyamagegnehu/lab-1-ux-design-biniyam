@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navy"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="40dp">
+
+        <!-- Brand Header -->
+        <LinearLayout
+            android:id="@+id/layoutBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/gold"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.05"
+                android:contentDescription="@string/accessibility_logo" />
+        </LinearLayout>
+
+        <!-- Success Shield / Checkmark Icon -->
+        <ImageView
+            android:id="@+id/ivSuccessIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="48dp"
+            android:src="@android:drawable/checkbox_on_background"
+            app:tint="@color/error_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutBrand"
+            android:contentDescription="@string/accessibility_success_icon" />
+
+        <!-- Congratulations Heading -->
+        <TextView
+            android:id="@+id/tvCongratTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_congratulations"
+            android:textColor="@color/error_color"
+            android:textSize="32sp"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivSuccessIcon" />
+
+        <!-- Account Successfully Created Message -->
+        <TextView
+            android:id="@+id/tvCongratSubtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/subtitle_congratulations"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCongratTitle" />
+
+        <!-- Description Explanation -->
+        <TextView
+            android:id="@+id/tvCongratDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/desc_congratulations"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:alpha="0.8"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCongratSubtitle" />
+
+        <!-- Proceed Button -->
+        <Button
+            android:id="@+id/btnCongratProceed"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/bg_gold_button"
+            android:text="@string/btn_proceed"
+            android:textColor="@color/navy"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:stateListAnimator="@null"
+            android:elevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCongratDesc" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

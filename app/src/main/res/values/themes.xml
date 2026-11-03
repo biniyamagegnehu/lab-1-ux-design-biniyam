@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HCashRedesign" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/navy</item>
+        <item name="colorSecondary">@color/gold</item>
+        <item name="android:statusBarColor">@color/navy</item>
+        <item name="android:navigationBarColor">@color/navy</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <style name="Theme.HCashRedesign" parent="Base.Theme.HCashRedesign" />
+</resources>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navy"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="32dp">
+
+        <!-- Brand Header -->
+        <LinearLayout
+            android:id="@+id/layoutBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/gold"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.05"
+                android:contentDescription="@string/accessibility_logo" />
+        </LinearLayout>
+
+        <!-- Verify Heading -->
+        <TextView
+            android:id="@+id/tvAddVerifyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_verify_phone"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutBrand" />
+
+        <!-- Illustration / Graphic Placeholder -->
+        <LinearLayout
+            android:id="@+id/layoutIllustration"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:background="@drawable/bg_card"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAddVerifyTitle">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@android:drawable/ic_menu_send"
+                app:tint="@color/gold"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/verification_code_label"
+                android:textColor="@color/navy"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp" />
+        </LinearLayout>
+
+        <!-- Message -->
+        <TextView
+            android:id="@+id/tvAddVerifyMsg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/subtitle_additional_verification"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:alpha="0.8"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutIllustration" />
+
+        <!-- 6 Individual OTP Digit Boxes Container -->
+        <LinearLayout
+            android:id="@+id/layoutAdditionalOtpDigits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAddVerifyMsg">
+
+            <EditText
+                android:layout_width="45dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_otp_digit"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:autofillHints="smsOTPCode" />
+
+            <EditText
+                android:layout_width="45dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_otp_digit"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:autofillHints="smsOTPCode" />
+
+            <EditText
+                android:layout_width="45dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_otp_digit"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:autofillHints="smsOTPCode" />
+
+            <EditText
+                android:layout_width="45dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_otp_digit"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:autofillHints="smsOTPCode" />
+
+            <EditText
+                android:layout_width="45dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_otp_digit"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:autofillHints="smsOTPCode" />
+
+            <EditText
+                android:layout_width="45dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_otp_digit"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:autofillHints="smsOTPCode" />
+        </LinearLayout>
+
+        <!-- Proceed Button -->
+        <Button
+            android:id="@+id/btnAddVerifyProceed"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_gold_button"
+            android:text="@string/btn_proceed"
+            android:textColor="@color/navy"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:stateListAnimator="@null"
+            android:elevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutAdditionalOtpDigits" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
